@@ -10,4 +10,5 @@ class redis {
         hasrestart => true,
         require => File["/etc/init.d/redis-server"],
     }
+    redis::source { 'default-redis': }
 }
